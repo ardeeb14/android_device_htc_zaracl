@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=m7spr
+export DEVICE=zaracl
 export VENDOR=htc
-./../m7-common/extract-files.sh $@
+./../zara-common/extract-files.sh $@

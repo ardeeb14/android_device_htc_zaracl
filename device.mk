@@ -15,13 +15,13 @@
 #
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/htc/m7spr/m7spr-vendor.mk)
+$(call inherit-product-if-exists, vendor/htc/zaracl/zaracl-vendor.mk)
 
 # overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/m7spr/overlay
+DEVICE_PACKAGE_OVERLAYS += device/htc/zaracl/overlay
 
 # common overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/m7-common/overlay-cdma
+DEVICE_PACKAGE_OVERLAYS += device/htc/zara-common/overlay-cdma
 
-# Inherit from m7-common
-$(call inherit-product, device/htc/m7-common/m7-common.mk)
+# Inherit from zara-common
+$(call inherit-product, device/htc/zara-common/zara-common.mk)
