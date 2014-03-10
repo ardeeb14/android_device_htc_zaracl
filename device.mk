@@ -17,11 +17,16 @@
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/zaracl/zaracl-vendor.mk)
 
+LOCAL_KERNEL := device/htc/zaracl/kernel
+
+PRODUCT_COPY_FILES := \
+	$(LOCAL_KERNEL):kernel
+
 # overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/zaracl/overlay
+#DEVICE_PACKAGE_OVERLAYS += device/htc/zaracl/overlay
 
 # common overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/zara-common/overlay-cdma
+#DEVICE_PACKAGE_OVERLAYS += device/htc/zara-common/overlay-cdma
 
 # Inherit from zara-common
 $(call inherit-product, device/htc/zara-common/zara-common.mk)
